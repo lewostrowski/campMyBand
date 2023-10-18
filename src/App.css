@@ -1,0 +1,188 @@
+.menu-container {
+  display: flex;
+  margin: 15px;
+
+  .menu-item, .menu-item-active {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 10px;
+    flex-grow: 1;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(119, 136, 153);
+  }
+
+  .menu-item-active {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, white 10%, rgb(147, 204, 234) 50%, white 90%);
+  }
+
+  .menu-item:hover {
+    background: linear-gradient(90deg, white 10%, rgb(224, 255, 255) 50%, white 90%);
+  }
+}
+
+.content-container {
+  margin: 30px;
+
+  .filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    color: rgb(119, 136, 153);
+
+    .filters-btn {
+      width: 100%;
+
+      button {
+        width: 100%;
+        border: none;
+        background: linear-gradient(90deg, white 10%, rgb(147, 204, 234) 50%, white 90%);
+        padding: 10px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
+
+    .filters-current {
+      ul {
+        margin: 0px;
+        list-style-type: "\2570";
+
+        .filter-key {
+          padding: 5px;
+        }
+
+        .filter-val {
+          color: rgb(147, 204, 234);
+          padding: 5px;
+        }
+      } 
+    }
+
+    .filters-input {
+      select {
+        color: rgb(147, 204, 234);
+        padding: 10px;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: bold;
+        background: white;
+        border: none;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      input {
+        color: rgb(147, 204, 234);
+        margin: 10px;
+        letter-spacing: 3px;
+        line-height: 1.5;
+        font-weight: bold;
+        backgroundr: rgb(119, 136, 153);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      button {
+        background: white;
+        border: none;
+        padding: 10px;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: rgb(147, 204, 234);
+
+      }
+
+      button:hover {
+        background: linear-gradient(90deg, white 10%, rgb(224, 255, 255) 50%, white 90%); 
+      }
+    }
+  }
+
+  .control-container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      background: white;
+      border: none;
+      padding: 10px;
+      line-height: 1.5;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: rgb(119, 136, 153);
+    }
+    
+    button:hover {
+      color: rgb(147, 204, 234);
+    }
+  }
+
+  .leaf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      border: none;
+      margin: 10px;
+      border-radius: 50px;
+      line-height: 1.5;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: rgb(119, 136, 153);
+    }
+    
+    button:hover {
+      background: rgb(224, 255, 255);
+    }
+
+    .leaf-btn-active {
+      background: rgb(147, 204, 234); 
+    }
+  }
+
+  .feed-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .feed-item {
+      display: flex;
+      flex-direction: row;
+
+      .feed-item-src {
+        padding: 10px;
+      }
+
+      .feed-item-desc {
+        padding: 10px;
+
+        h3, span {
+          line-height: 1.5;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          padding: 0px 5px 0px 5px;
+          color: rgb(147, 204, 234);
+        }
+
+        h4, p, li {
+          letter-spacing: 3p;
+          line-height: 1.5;
+          color: rgb(119, 136, 153);
+          list-style-type: "\2570"; 
+        }
+      }
+
+    }
+  }
+}
